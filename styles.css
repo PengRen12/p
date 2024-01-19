@@ -1,0 +1,221 @@
+/* Add your CSS styling here */
+
+
+.navbar {
+    background-color: #FFA07A; /* Orange background */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .logo img {
+    width: 50px; /* Adjust size as needed */
+    margin-right: 10px;
+  }
+  
+  .logo h1 {
+    margin: 0;
+    color: #FFFFFF; /* White text */
+    font-size: 24px; /* Large text */
+  }
+  
+  .logo p {
+    margin: 0;
+    color: #FFFFFF; /* White text */
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #FFFFFF; /* White text */
+    margin: 0 10px;
+    padding: 5px 10px;
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+  }
+  
+  .nav-links a:hover,
+  .nav-links a.active {
+    background-color: #FF4500; /* Darker orange for hover/active */
+  }
+  
+  .connect-button {
+    background-color: #FFDAB9; /* Lighter orange background */
+    padding: 10px 15px;
+  }
+  
+  .connect-button:hover {
+    background-color: #FFC085; /* Slightly darker orange for hover */
+  }
+  
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+    }
+  
+    .nav-links {
+      padding-top: 10px;
+    }
+  }
+  
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar {
+    background-color: #FFA07A; /* Replace with the actual color */
+    overflow: hidden;
+  }
+  
+  .navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .popular-beverages {
+    text-align: center;
+    padding: 20px;
+    background-color: #FFDAB9; /* Replace with the actual color */
+  }
+  
+  .popular-beverages h1,
+  .popular-beverages h2 {
+    color: #000000; /* Replace with the actual color */
+  }
+  
+  .popular-beverages p {
+    color: #000000; /* Replace with the actual color */
+  }
+  
+  .beverage-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .beverage-item {
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .beverage-item img {
+    width: 100px; /* Adjust as needed */
+    height: auto;
+  }
+  
+  /* You can add more styling for responsive design, colors, fonts, etc. */
+  .footer {
+    background-color: #FFA07A; /* Orange background */
+    padding: 20px 0;
+    color: white;
+    text-align: center;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .footer-nav {
+    margin-bottom: 10px;
+  }
+  
+  .footer-nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 5px 10px;
+    font-size: 16px; /* Adjust as needed */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+  }
+  
+  .footer-nav a:hover {
+    color: #FFD700; /* Gold color for hover */
+  }
+  
+  .social-links {
+    margin-bottom: 10px;
+  }
+  
+  .social-links a {
+    margin: 0 5px;
+  }
+  
+  .social-links img {
+    width: 24px; /* Adjust as needed */
+    margin: 0 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+    }
+  
+  }
+  
+  /* Adjust the media query and add more as needed for responsiveness */
+  
+  .beverage-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 创建四列 */
+    grid-gap: 20px; /* 设置网格行与列之间的间隙 */
+    margin: 20px; /* 容器的外边距 */
+  }
+  
+  .beverage-item {
+    text-align: center; /* 文本居中对齐 */
+    margin-bottom: 20px; /* 每个饮料项底部的外边距 */
+  }
+  
+  .beverage-item img {
+    width: 100%; /* 图片宽度填充整个容器宽度 */
+    height: auto; /* 图片高度自动调整以保持宽高比 */
+    margin-bottom: 10px; /* 图片和文本之间的间隙 */
+  }
+  
+  .beverage-item p {
+    margin: 0; /* 段落的外边距设为0 */
+    font-weight: bold; /* 段落字体加粗 */
+  }
+  
+  /* 响应式布局 */
+  @media (max-width: 1024px) {
+    .beverage-container {
+      grid-template-columns: repeat(2, 1fr); /* 屏幕宽度较小时，每行两列 */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .beverage-container {
+      grid-template-columns: 1fr; /* 屏幕更小时，每行一列 */
+    }
+  }
+  
+  .beverage-item img {
+    max-width: 150px; /* 设置图片最大宽度 */
+    height: auto; /* 保持图片宽高比 */
+    margin-bottom: 10px; /* 图片和文本之间的间隙 */
+    display: block; /* 确保图片不会在行内显示，这样可以应用 margin */
+    margin-left: auto; /* 这两个 margin 设置是为了居中图片 */
+    margin-right: auto;
+  }
+  
