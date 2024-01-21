@@ -41,9 +41,7 @@
   }
   
   .nav-links a:hover,
-  .nav-links a.active {
-    background-color: #F4976c; 
-  }
+
   
   .connect-button {
     background-color: #FFDAB9;
